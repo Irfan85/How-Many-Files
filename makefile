@@ -3,7 +3,7 @@ all: README.md
 README.md: guessinggame.sh
 	touch README.md
 	echo "# Bash file number guessing game\n" > README.md
-	echo -n "Makefile execution time: **">> README.md
+	echo -n "Last makefile execution time: **">> README.md
 	date | tr -d "\n" >> README.md
 	echo "**\n" >> README.md
 	echo -n "Number of lines in guessinggame.sh: **" >> README.md
