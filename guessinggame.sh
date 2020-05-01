@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function file_num {
     echo $( ls -l | grep "^-" | wc -l )
 }
@@ -20,7 +22,7 @@ function check {
 }
 
 function main {
-    read -p "Guess the number of files: " guess
+    read -p "Guess the number of files in the current directory: " guess
     
     check $guess
     local res=$?
